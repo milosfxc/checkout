@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    height: 100vh;
+    width: auto;
+    font-family: 'lato', sans-serif;
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    width: 100vw;
+    height: max-content;
+    background-color: #292929ec;
+    display: none;
+}
+
+.legal {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 13px;
+    color: #F2F4F5;
+}
+
+.js--popup {
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0;
+    width: 390px;
+    background-color: white;
+    border-radius: 12px;
+    display: none;
+}
+
+.checkout__header {
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F2F4F5;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.header__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.header__title--gradient {
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'teko', sans-serif;
+    letter-spacing: .4px;
+    background: -webkit-gradient(linear, left top, right top, from(#4361ee), to(#b23acb));
+    background: -o-linear-gradient(left, #4361ee, #b23acb);
+    background: linear-gradient(to right, #4361ee, #b23acb);
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+}
+
+.header__logo {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.subscription__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: .4px;
+} 
+
+.auto__renewal {
+    color: #4361ee;
+    font-size: 13px;
+    letter-spacing: .4px;
+    padding: 10px
+}
+
+.payment__method__block {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#paypal, #credit__card {
+    width: 30%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#credit__card {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    font-size: 12px;
+    letter-spacing: .4px;
+}
+
+.active {
+    background-color: #4362eeef;
+    color: white;
+}
+
+.inactive {
+    background-color: #F2F4F5;
+    color: #a9a9a9;
+}
+
+.info__block {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#firstname, #lastname {
+    padding: 8px 0;
+    border: 1px solid #a9a9a9;
+    padding-left: 10px;
+}
+
+#firstname {
+    border-top-left-radius: 5px;
+    border-right: none;
+}
+
+#lastname {
+    border-top-right-radius: 5px;
+}
+
+#email {
+    border: 1px solid #a9a9a9;
+    border-top: none;
+    border-bottom: none;
+    padding: 8px 12px;
+}
+
+#email--paypal {
+    border: 1px solid #a9a9a9;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+#country {
+    border: 1px solid #a9a9a9;
+    border-bottom: none;
+    padding: 8px 12px;
+}
+
+#phonenumber {
+    border: 1px solid #a9a9a9;
+    padding: 8px 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#cardnumber {
+    border: 1px solid #a9a9a9;
+    padding: 8px 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#expdate {
+    border: 1px solid #a9a9a9;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+}
+
+#securitycode {
+    border: 1px solid #a9a9a9;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 5px;
+}
+
+#button {
+    background-color: #4362eeef;
+    color: white;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    letter-spacing: .4px;
+}
+
+#billing__info {
+    margin-top: 20px;
+}
+
+#paypal__block {
+    display: none;
+}
+
+#paypal {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paypal__text {
+    text-align: left;
+    color: #a9a9a9;
+    font-size: 12px;
+    margin-top: 10px;
+    max-width: fit-content;
+}
+
+.cta__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f2f4f5;
+    margin-top: 25px;
+}
+
+.secure__block {
+    text-align: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    flex: 1;
+  }
+
+
+  .hide {
+    display: none;
+  }
+
+
+
+  /*/////////////////// BUSINESS BLOCK ///////////////////*/
+  #business__info {
+    margin-bottom: 10px;
+    display: none;
+  }
+
+  #business__checkbox {
+    margin-bottom: 10px;
+  }
+
+  #businessname {
+    border: 1px solid #a9a9a9;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+
+  #fulladdress {
+    border:1px solid #a9a9a9;
+    padding: 8px 12px;
+    border-bottom: none;
+  }
+
+  #city, #zip {
+    padding: 8px 0;
+    border: 1px solid #a9a9a9;
+    padding-left: 10px;
+    border-bottom: none;
+}
+
+#city {
+    border-right: none;
+}
+
+  /*/////////////////// COUPON BLOCK ///////////////////*/
+
+  #coupon__checkbox {
+    margin: 10px 0;
+  }
+  #coupon__form {
+    display: none;
+  }
+
+  #couponcode {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+    margin-top: 10px;
+  }
+
+
+  #button__coupon {
+    background-color: #4362eeef;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: .4px;
+  }

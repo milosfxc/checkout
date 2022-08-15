@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="app.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <button onclick="myFunction(this);">subscribe</button>
+    <div id="overlay">
+        <div id="checkout" class="js--popup">
+            <div class="checkout__header">
+                <div class="header__title">
+                    <div class="header__title--gradient">Ads2Spy</div>
+                </div>
+            </div>
+            <div class="subscription__info">
+                <div><strong>Ads2Spy monthly subscription</strong></div>
+                <div><strong>5&nbsp;USD</strong></div>
+            </div>
+            <div>
+                <a class="auto__renewal" href="#"><strong>Auto-renewal</strong></a>
+            </div>
+            <div class="payment__method__block">
+                <div id="credit__card" class="active">
+                    <div>Credit/Debit Card</div>
+                    <img src="creditcs.svg" alt="creditcs">
+                </div>
+                <div id="paypal" class="inactive">
+                    <div><strong>PayPal</strong></div>
+                </div>
+            </div>
+            <div class="info__block">
+                <!--Business info-->
+                <div id="business__checkbox">
+                    <label><input type="checkbox" onchange="change(this)">Business purchase</label>
+                </div>
+                <div id="business__info">
+                    <div class="row">
+                        <input class="column" type="text" placeholder="Business name" id="businessname" name="business-name"
+                            required />
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input class="column" type="text" placeholder="First name" id="firstname" name="billing-first-name"
+                            required />
+                        <input class="column" type="text" placeholder="Last name" id="lastname" name="billing-last-name"
+                            required />
+                    </div>
+                    <div class="row">
+                        <input class="column" type="email" id="email" name="billing-email" placeholder="Email adress"
+                            required>
+                    </div>
+                    <div class="row">
+                        <input class="column" type="text" id="fulladdress" name="full-address" placeholder="Full address"
+                            required>
+                    </div>
+                    <div class="row">
+                        <input class="column" type="text" id="city" name="city" placeholder="City" required>
+                        <input class="column" type="text" id="zip" name="zip" placeholder="ZIP" required>
+                    </div>
+                    <div class="row">
+                        <select class="column" type="text" id="country" name="billing-country" name="countries" required>
+                            <option disabled selected>Countries</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <input class="column" type="number" id="phonenumber" name="billing-phone"
+                            placeholder="Phone number">
+                    </div>
+                </div>
+                <!--Person Info-->
+                <div id="personal__info">
+                    <div class="row">
+                        <input class="column" type="text" placeholder="First name" id="firstname" name="billing-first-name"
+                            required />
+                        <input class="column" type="text" placeholder="Last name" id="lastname" name="billing-last-name"
+                            required />
+                    </div>
+                    <div class="row">
+                        <input class="column" type="email" id="email" name="billing-email" placeholder="Email adress"
+                            required>
+                    </div>
+                    <div class="row">
+                        <select class="column" type="text" id="country" name="billing-country" name="countries" required>
+                            <option disabled selected>countries</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <input class="column" type="number" id="phonenumber" name="billing-phone"
+                            placeholder="Phone number">
+                    </div>
+                </div>
+                <div id="coupon__checkbox">
+                    <label><input type="checkbox" onchange="getCoupon(this)">I've a coupon code</label>
+                    <div id="coupon__form">
+                        <input type="text" name="coupon-code" id="couponcode" placeholder="Coupon code">
+                        <input id="button__coupon" type="submit">
+                    </div>
+                </div>
+                <div id="billing__info">
+                    <div class="row">
+                        <input id="cardnumber" type="text" class="column" placeholder="Card number" required>
+                    </div>
+                    <div class="row">
+                        <input class="column" type="month" placeholder="Exp date" id="expdate" required />
+                        <input class="column" type="number" placeholder="Security code" id="securitycode" required />
+                    </div>
+                </div>
+                <div id="paypal__block">
+                    <div class="row">
+                        <input class="column" type="email" id="email--paypal" name="billing-email"
+                            placeholder="Paypal email adress" required>
+                    </div>
+                    <div class="paypal__text">* Clicking on "Submit order" will take you to PayPal's secure checkout page to
+                        complete your order.</div>
+                    <div class="paypal__text">Please use PayPal verified email address to prevent any inconvenience during
+                        the checkout process.</div>
+                </div>
+            </div>
+            <div class="cta__block">
+                <a id="button">Subscribe now for $5/month</a>
+            </div>
+            <div class="secure__block">
+                <img alt="secure" src="secure.png">
+            </div>
+        </div>
+        <div class="legal">
+            By submitting your Order, you acknowledge that you are purchasing from PayPro Global (PayPro Global, Inc., PayPro Europe Limited, PPG Digital EU Ltd. or PayPro U.S. Inc.), an authorized e-Commerce reseller.<br><br>
+            Once the transaction is complete, your contact information will be shared with the product vendor for ongoing support purposes.<br><br>
+            24/7 English phone support for online payment related issues:<br><br>
+            -888-317-4868 (Toll free)<br><br>
+            + 1-647-977-7769 (International)<br><br>
+            © PayPro Global, Inc. 2022<br>
+Privacy Policy | Terms and Conditions | Refund Policy
+        </div>
+    </div>
+    
+
+    </div>
+
+</body>
+
+</html>
